@@ -44,10 +44,10 @@ Results can be shown as tables, charts, dashboards, or alerts.
 
 Splunk Architecture (Core Components)
 
-Forwarder: Small agent installed on source machines to send data to Splunk.
+1.Forwarder: Small agent installed on source machines to send data to Splunk.
 
-Indexer: Stores and indexes the data (the brain).
+2.Indexer: Stores and indexes the data (the brain).
 
-Search Head: Provides the UI where you search, make dashboards, and run reports.
+3.Search Head: Provides the UI where you search, make dashboards, and run reports.
 
 👉 In small setups, one machine can be all three. In enterprises, they are distributed.
