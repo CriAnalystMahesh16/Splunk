@@ -1,0 +1,53 @@
+Why Splunk Was Invented?
+
+Before Splunk (early 2000s), IT teams had a huge problem:
+
+Every server, application, network device, and security tool produced logs (machine data).
+
+These logs were often unstructured (different formats, plain text, no order).
+
+To troubleshoot an issue, engineers had to manually open log files, search with grep/find, and hope they spotted the error.
+
+In large companies with hundreds of servers, this became nearly impossible.
+
+💡 So in 2003, three engineers (Michael Baum, Rob Das, Erik Swan) built Splunk to act like Google for logs:
+
+Collect machine data from many sources.
+
+Index it (like a search engine).
+
+Let you run fast searches in real-time.
+
+By 2005, Splunk became popular because it made IT operations and security analysis much faster. Today it’s a leader in SIEM (Security Information & Event Management).
+
+🔹 How Splunk Works (Simple View)
+
+Think of Splunk in 3 steps:
+
+Data Ingestion
+
+Logs, events, metrics from servers, firewalls, applications, IoT devices, etc.
+
+Example: Apache access logs, Windows Event Logs, Linux syslogs.
+
+Indexing
+
+Splunk stores this data in special buckets (hot, warm, cold).
+
+Each event gets a timestamp and metadata (host, source, sourcetype).
+
+Searching & Visualization
+
+You use SPL (Search Processing Language) to query data.
+
+Results can be shown as tables, charts, dashboards, or alerts.
+
+Splunk Architecture (Core Components)
+
+Forwarder: Small agent installed on source machines to send data to Splunk.
+
+Indexer: Stores and indexes the data (the brain).
+
+Search Head: Provides the UI where you search, make dashboards, and run reports.
+
+👉 In small setups, one machine can be all three. In enterprises, they are distributed.
